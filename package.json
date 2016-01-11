@@ -1,0 +1,36 @@
+{
+  "name": "prevent-unload",
+  "version": "0.0.1",
+  "description": "Prevent page unloading in simple way",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run lint && npm run clean && npm run babel",
+    "lint": "eslint src",
+    "babel": "babel src -d lib",
+    "clean": "rimraf lib && mkdir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/preco21/prevent-unload.git"
+  },
+  "keywords": [
+    "beforeunload",
+    "page",
+    "unload",
+    "browser"
+  ],
+  "author": "Plusb Preco <plusb21@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/preco21/prevent-unload/issues"
+  },
+  "homepage": "https://github.com/preco21/prevent-unload#readme",
+  "devDependencies": {
+    "babel-eslint": "^5.0.0-beta6",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-preset-es2015": "^6.3.13",
+    "eslint": "^2.0.0-alpha-2",
+    "eslint-plugin-babel": "^3.0.0"
+  }
+}
