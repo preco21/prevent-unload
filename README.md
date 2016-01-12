@@ -15,8 +15,7 @@ $ npm install prevent-unload
 Example:
 
 ```javascript
-import preventUnload from 'prevent-unload';
-// const preventUnload = require('prevent-unload');
+const preventUnload = require('prevent-unload');
 
 preventUnload(); // When user close the page, the browser shows 'Are you sure?' dialog box.
 ```
