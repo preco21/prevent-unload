@@ -1,5 +1,7 @@
 # prevent-unload
 
+[![NPM](https://nodei.co/npm/prevent-unload.png?downloads=true)](https://nodei.co/npm/prevent-unload/)
+
 `prevent-unload` lets you prevent page unloading from the user's action.
 
 **This module works only in a browser**
@@ -15,7 +17,7 @@ $ npm install prevent-unload
 Example:
 
 ```javascript
-const preventUnload = require('prevent-unload');
+import preventUnload from 'prevent-unload';
 
 preventUnload(); // When user close the page, the browser shows 'Are you sure?' dialog box.
 ```
