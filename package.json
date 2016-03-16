@@ -4,6 +4,7 @@
   "description": "Prevent page unloading in simple way",
   "main": "lib/index.js",
   "scripts": {
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run lint && npm run clean && npm run babel",
     "lint": "eslint src",
