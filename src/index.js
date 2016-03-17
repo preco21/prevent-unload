@@ -1,23 +1,23 @@
 const defaultMessage = 'Are you sure?';
 
-let listener;
+let handler;
 
 function preventUnload(message = defaultMessage) {
-  if (listener) {
+  if (handler) {
     return;
   }
 
-  listener = makeHandler(message);
-  window.addEventListener('beforeunload', listener);
+  handler = makeHandler(message);
+  window.addEventListener('beforeunload', handler);
 }
 
 function revoke() {
-  if (!listener) {
+  if (!handler) {
     return;
   }
 
-  window.removeEventListener('beforeunload', listener);
-  listener = null;
+  window.removeEventListener('beforeunload', handler);
+  handler = null;
 }
 
 function makeHandler(message) {
