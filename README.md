@@ -4,7 +4,7 @@
 
 `prevent-unload` lets you prevent page unloading from the user's action.
 
-**This module works only in a browser**
+**This module only works in a browser**
 
 ## Installation
 
