@@ -31,3 +31,7 @@ Prevent page unloading. (`message` is optional)
 ### `preventUnload.revoke()`
 
 Cancel the unload prevention.
+
+## License
+
+[MIT](http://preco.mit-license.org/)
