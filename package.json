@@ -2,6 +2,7 @@
   "name": "prevent-unload",
   "version": "0.0.4",
   "description": "Prevent page unloading in simple way",
+  "author": "Plusb Preco <plusb21@gmail.com>",
   "main": "lib/index.js",
   "scripts": {
     "prepublish": "npm run build",
@@ -11,6 +12,7 @@
     "babel": "babel src -d lib",
     "clean": "rimraf lib && mkdir lib"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/preco21/prevent-unload.git"
@@ -21,8 +23,6 @@
     "unload",
     "browser"
   ],
-  "author": "Plusb Preco <plusb21@gmail.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/preco21/prevent-unload/issues"
   },
