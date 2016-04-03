@@ -29,13 +29,13 @@ rules:
 
   comma-dangle: 1
   no-cond-assign: 1
-  no-console: 0
+  no-console: 1
   no-constant-condition: 0 # loose rule: 화살표 함수는 항상 괄호를 쓰므로 문제가 되지 않으며 `while(true)`를 위해 비활성화
-  no-control-regex: 0
+  no-control-regex: 1
   no-debugger: 1
   no-dupe-args: 2
-  no-dupe-keys: 2
-  no-duplicate-case: 2
+  no-dupe-keys: 1
+  no-duplicate-case: 1
   no-empty-character-class: 1
   no-empty: 1
   no-ex-assign: 2
@@ -43,7 +43,7 @@ rules:
   no-extra-parens: 1
   no-extra-semi: 1
   no-func-assign: 2
-  no-inner-declarations: 0
+  no-inner-declarations: 1
   no-invalid-regexp: 2
   no-irregular-whitespace: 2
   no-negated-in-lhs: 1
@@ -77,7 +77,7 @@ rules:
   no-empty-pattern: 2
   no-eq-null: 1
   no-eval: 1
-  no-extend-native: 0
+  no-extend-native: 1
   no-extra-bind: 1
   no-extra-label: 1
   no-fallthrough: 1
@@ -114,6 +114,7 @@ rules:
   no-unused-labels: 2
   no-useless-call: 1
   no-useless-concat: 1
+  no-useless-escape: 1
   no-void: 2
   no-warning-comments: 0
   no-with: 2
@@ -131,7 +132,7 @@ rules:
   no-shadow-restricted-names: 1
   no-shadow: 0
   no-undef-init: 1
-  no-undef: 1
+  no-undef: 2
   no-undefined: 1
   no-unused-vars: 1
   no-use-before-define: 0 # loose rule: 메서드 내의 화살표 함수 표현식은 서로 참조해서 쓸 수 있다
@@ -187,6 +188,7 @@ rules:
   max-nested-callbacks: 0
   max-params: 0
   max-statements: 0
+  max-statements-per-line: 0
   # new-cap: 1
   new-parens: 1
   newline-after-var: 0
@@ -214,7 +216,9 @@ rules:
     - 1
     - skipBlankLines: true
   no-underscore-dangle: 0
-  no-unneeded-ternary: 1
+  no-unneeded-ternary:
+    - 1
+    - defaultAssignment: false
   # object-curly-spacing: 1
   one-var: 0
   one-var-declaration-per-line: 0
@@ -223,7 +227,9 @@ rules:
     - always
   operator-linebreak: 1
   padded-blocks: 0
-  quote-props: 0
+  quote-props:
+    - 1
+    - as-needed
   quotes:
     - 1
     - single
@@ -250,6 +256,9 @@ rules:
   no-confusing-arrow: 0
   no-const-assign: 2
   no-dupe-class-members: 2
+  no-duplicate-imports:
+    - 1
+    - includeExports: true
   no-new-symbol: 2
   no-this-before-super: 2
   no-var: 2
