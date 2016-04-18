@@ -26,6 +26,7 @@ rules:
   babel/object-shorthand: 1
   babel/arrow-parens: 1
   babel/no-await-in-loop: 0
+  babel/flow-object-type: 0
 
   comma-dangle: 1
   no-cond-assign: 1
