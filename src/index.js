@@ -1,28 +1,24 @@
 const defaultMessage = 'Are you sure?';
 
-let handler;
-
 function preventUnload(message = defaultMessage) {
-  if (handler) {
-    return;
-  }
+  let handler = makeHandler(message);
 
-  handler = makeHandler(message);
   window.addEventListener('beforeunload', handler);
+  return handler;
 }
 
-function revoke() {
+function cancel(handler) {
   if (!handler) {
     return;
   }
 
   window.removeEventListener('beforeunload', handler);
-  handler = null;
 }
 
 function makeHandler(message) {
   return () => {
-    // for cross-browser solution, see: https://developer.mozilla.org/en-US/docs/Web/Events/beforeunload
+    // cross-browser solution
+    // https://developer.mozilla.org/en-US/docs/Web/Events/beforeunload
     event.returnValue = message;
     return message;
   };
@@ -30,5 +26,5 @@ function makeHandler(message) {
 
 export {
   preventUnload as default,
-  revoke
+  cancel
 };
