@@ -4,12 +4,10 @@
 
 `prevent-unload` lets you prevent page unloading from the user's action.
 
-**This module only works in a browser**
-
 ## Installation
 
 ```bash
-$ npm install prevent-unload
+$ npm install prevent-unload --save
 ```
 
 ## Usage
@@ -17,20 +15,30 @@ $ npm install prevent-unload
 Example:
 
 ```javascript
-import preventUnload from 'prevent-unload';
+import preventUnload, {cancel} from 'prevent-unload';
 
-preventUnload(); // When user close the page, the browser shows 'Are you sure?' dialog box.
+let handler = preventUnload();
+cancel(handler);
 ```
 
 ## API
 
 ### `preventUnload([message])`
 
-Prevent page unloading. (`message` is optional)
+* `message` String (optional) - Message to display on confirm popup. Default is
+`'Are you sure?'`.
 
-### `preventUnload.revoke()`
+Returns `handler` reference, which is used for cancel the behavior.
 
-Cancel the unload prevention.
+Apply page unloading prevention. If user attempt to close current web page after
+calling the method, then browser blocks page unloading and shows up popup with
+specified message.
+
+### `preventUnload.cancel(handler)`
+
+* `handler` Function - Handler reference to cancel event.
+
+Cancel page unloading prevention.
 
 ## License
 
