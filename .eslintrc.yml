@@ -1,5 +1,5 @@
 ---
-# top-most configuration
+## top-most configuration
 root: true
 
 parser: babel-eslint
@@ -19,6 +19,7 @@ parserOptions:
   soureType: module
 
 rules:
+  ## babel
   babel/generator-star-spacing: 1
   babel/new-cap: 1
   babel/array-bracket-spacing: 1
@@ -28,6 +29,7 @@ rules:
   babel/no-await-in-loop: 0
   babel/flow-object-type: 0
 
+  ## possible errors
   comma-dangle: 1
   no-cond-assign: 1
   no-console: 1
@@ -37,8 +39,10 @@ rules:
   no-dupe-args: 2
   no-dupe-keys: 1
   no-duplicate-case: 1
+  no-empty:
+    - 1
+    # - allowEmptyCatch: true
   no-empty-character-class: 1
-  no-empty: 1
   no-ex-assign: 2
   no-extra-boolean-cast: 1
   no-extra-parens: 1
@@ -51,11 +55,13 @@ rules:
   no-obj-calls: 2
   no-regex-spaces: 1
   no-sparse-arrays: 0
+  no-unexpected-multiline: 2
   no-unreachable: 1
   use-isnan: 1 # Number.isNaN
   valid-jsdoc: 0
   valid-typeof: 2
-  no-unexpected-multiline: 2
+
+  ## best practices
   accessor-pairs: 0
   array-callback-return: 1
   block-scoped-var: 0 # unused
@@ -63,10 +69,10 @@ rules:
   consistent-return: 0 # loose rule: `null` 값을 반환할 때도 있다
   curly: 1
   default-case: 1
-  dot-notation: 0
   dot-location:
     - 1
     - property
+  dot-notation: 0
   eqeqeq: 0
   guard-for-in: 0
   no-alert: 0
@@ -86,22 +92,21 @@ rules:
   no-implicit-coercion: 0
   no-implicit-globals: 0 # unused
   no-implied-eval: 1
-  no-invalid-this: 0
+  no-invalid-this: 1
   no-iterator: 2
   no-labels: 1
   no-lone-blocks: 1
   no-loop-func: 0
-  no-magic-numbers: 0
+  no-magic-numbers: 0 # ?
   no-multi-spaces: 1
   no-multi-str: 1
   no-native-reassign: 2
+  no-new: 0
   no-new-func: 2
   no-new-wrappers: 1
-  no-new: 0
-  no-octal-escape: 2
   no-octal: 2
+  no-octal-escape: 2
   no-param-reassign: 0 # loose rule
-  no-process-env: 0
   no-proto: 2
   no-redeclare: 2
   no-return-assign: 0
@@ -125,20 +130,26 @@ rules:
     - 1
     - inside
   yoda: 1
+
+  ## strict mode
   strict: 0
+
+  ## variables
   init-declarations: 0
   no-catch-shadow: 0
   no-delete-var: 2
   no-label-var: 1
-  no-shadow-restricted-names: 1
+  no-restricted-globals: 0
   no-shadow: 0
-  no-undef-init: 1
+  no-shadow-restricted-names: 1
   no-undef: 2
+  no-undef-init: 1
   no-undefined: 1
   no-unused-vars: 1
   no-use-before-define: 0 # loose rule: 메서드 내의 화살표 함수 표현식은 서로 참조해서 쓸 수 있다
+
+  ## node.js and commonjs
   callback-return: 0
-  # loose rule
   # callback-return:
   #   - 1
   #   - - resolve
@@ -150,10 +161,12 @@ rules:
   no-mixed-requires: 0
   no-new-require: 0
   no-path-concat: 1
+  no-process-env: 0
   no-process-exit: 0
-  no-restricted-imports: 0
   no-restricted-modules: 0
   no-sync: 0
+
+  ## stylistic issues
   # array-bracket-spacing: 1
   block-spacing: 1
   brace-style:
@@ -172,9 +185,9 @@ rules:
   eol-last: 1
   func-names: 0
   func-style: 0
+  id-blacklist: 0
   id-length: 0
   id-match: 0
-  id-blacklist: 0
   indent:
     - 1
     - 2
@@ -193,6 +206,7 @@ rules:
   # new-cap: 1
   new-parens: 1
   newline-after-var: 0
+  newline-before-return: 0
   newline-per-chained-call: 0 # loose rule
   no-array-constructor: 1
   no-bitwise: 0
@@ -210,7 +224,6 @@ rules:
   no-restricted-syntax:
     - 2
     - WithStatement
-  no-whitespace-before-property: 1
   no-spaced-func: 1
   no-ternary: 0
   no-trailing-spaces:
@@ -220,6 +233,7 @@ rules:
   no-unneeded-ternary:
     - 1
     - defaultAssignment: false
+  no-whitespace-before-property: 1
   # object-curly-spacing: 1
   one-var: 0
   one-var-declaration-per-line: 0
@@ -235,10 +249,10 @@ rules:
     - 1
     - single
   require-jsdoc: 0
-  semi-spacing: 1
   semi: 2
-  sort-vars: 0
+  semi-spacing: 1
   sort-imports: 0 # ambiguous rule
+  sort-vars: 0
   space-before-blocks: 1
   space-before-function-paren:
     - 1
@@ -248,6 +262,8 @@ rules:
   space-unary-ops: 1
   spaced-comment: 0
   wrap-regex: 0
+
+  ## ecmascript 6
   arrow-body-style: 0
   # arrow-parens: 1
   arrow-spacing: 1
@@ -261,9 +277,10 @@ rules:
     - 1
     - includeExports: true
   no-new-symbol: 2
+  no-restricted-imports: 0
   no-this-before-super: 2
-  no-var: 2
   no-useless-constructor: 1
+  no-var: 2
   # object-shorthand: 1
   prefer-arrow-callback: 1
   prefer-const: 0
