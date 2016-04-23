@@ -8,8 +8,8 @@ function preventUnload(message = defaultMessage) {
 }
 
 function cancel(handler) {
-  if (!handler) {
-    return;
+  if (typeof handler != 'function') {
+    throw new Error('handler must be a function');
   }
 
   window.removeEventListener('beforeunload', handler);
