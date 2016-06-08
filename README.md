@@ -28,11 +28,12 @@ cancel(handler);
 * `message` String (optional) - Message to display on confirm popup. Default is
 `'Are you sure?'`.
 
-Returns `handler` reference, which is used for cancel the behavior.
-
 Apply page unloading prevention. If user attempt to close current web page after
 calling the method, then browser blocks page unloading and shows up popup with
 specified message.
+
+This method returns reference of `handler`, which can be used for cancel the
+behavior.
 
 ### `preventUnload.cancel(handler)`
 
