@@ -5,17 +5,12 @@
   "author": "Plusb Preco <plusb21@gmail.com>",
   "main": "lib/index.js",
   "scripts": {
-    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build",
     "build": "npm run lint && npm run clean && npm run babel",
     "lint": "eslint src",
     "babel": "babel src -d lib",
     "clean": "rimraf lib && mkdir lib"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/preco21/prevent-unload.git"
   },
   "keywords": [
     "beforeunload",
@@ -23,15 +18,19 @@
     "unload",
     "browser"
   ],
+  "license": "MIT",
+  "homepage": "https://github.com/preco21/prevent-unload#readme",
+  "repository": "preco21/prevent-unload",
   "bugs": {
     "url": "https://github.com/preco21/prevent-unload/issues"
   },
-  "homepage": "https://github.com/preco21/prevent-unload#readme",
   "devDependencies": {
+    "babel-cli": "^6.9.0",
     "babel-eslint": "^6.0.3",
     "babel-plugin-add-module-exports": "^0.1.2",
     "babel-preset-es2015": "^6.6.0",
-    "eslint": "^2.8.0",
-    "eslint-plugin-babel": "^3.2.0"
+    "eslint": "^2.11.1",
+    "eslint-plugin-babel": "^3.2.0",
+    "rimraf": "^2.5.2"
   }
 }
