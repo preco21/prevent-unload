@@ -13,9 +13,10 @@
     "clean": "rimraf lib && mkdir lib"
   },
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/preco21/prevent-unload.git"
+  "homepage": "https://github.com/preco21/prevent-unload#readme",
+  "repository": "preco21/prevent-unload",
+  "bugs": {
+    "url": "https://github.com/preco21/prevent-unload/issues"
   },
   "keywords": [
     "beforeunload",
@@ -23,10 +24,6 @@
     "unload",
     "browser"
   ],
-  "bugs": {
-    "url": "https://github.com/preco21/prevent-unload/issues"
-  },
-  "homepage": "https://github.com/preco21/prevent-unload#readme",
   "devDependencies": {
     "babel-eslint": "^6.0.3",
     "babel-plugin-add-module-exports": "^0.1.2",
