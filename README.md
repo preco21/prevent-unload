@@ -3,7 +3,7 @@
 [![Code Style Prev](https://img.shields.io/badge/code%20style-prev-32c8fc.svg?style=flat-square)](https://github.com/preco21/eslint-config-prev)
 [![NPM Version](https://img.shields.io/npm/v/prevent-unload.svg?style=flat-square)](https://www.npmjs.com/package/prevent-unload)
 [![Build Status](https://img.shields.io/travis/preco21/prevent-unload/master.svg?style=flat-square)](https://travis-ci.org/preco21/prevent-unload)
-[![Development Dependency Status](	https://img.shields.io/david/dev/preco21/prevent-unload.svg?style=flat-square)](https://david-dm.org/preco21/prevent-unload#info=devDependencies)
+[![Development Dependency Status](https://img.shields.io/david/dev/preco21/prevent-unload.svg?style=flat-square)](https://david-dm.org/preco21/prevent-unload#info=devDependencies)
 
 > Prevent page unloading from the user's action on browser
 
