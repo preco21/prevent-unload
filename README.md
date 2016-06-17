@@ -1,8 +1,13 @@
 # prevent-unload
 
-[![NPM](https://nodei.co/npm/prevent-unload.png?downloads=true)](https://nodei.co/npm/prevent-unload/)
+[![Code Style Prev](https://img.shields.io/badge/code%20style-prev-32c8fc.svg?style=flat-square)](https://github.com/preco21/eslint-config-prev)
+[![NPM Version](https://img.shields.io/npm/v/prevent-unload.svg?style=flat-square)](https://www.npmjs.com/package/prevent-unload)
+[![Build Status](https://img.shields.io/travis/preco21/prevent-unload/master.svg?style=flat-square)](https://travis-ci.org/preco21/prevent-unload)
+[![Dependency Status](https://img.shields.io/david/preco21/prevent-unload.svg?style=flat-square)](https://david-dm.org/preco21/prevent-unload)
+[![Development Dependency Status](	https://img.shields.io/david/dev/preco21/prevent-unload.svg?style=flat-square)](https://david-dm.org/preco21/prevent-unload)
+[![Known Vulnerabilities](https://snyk.io/test/npm/prevent-unload/badge.svg?style=flat-square)](https://snyk.io/test/npm/prevent-unload)
 
-Prevent page unloading from the user's action.
+> Prevent page unloading from the user's action on browser
 
 ## Installation
 
@@ -17,7 +22,7 @@ Example:
 ```javascript
 import preventUnload, {cancel} from 'prevent-unload';
 
-let handler = preventUnload();
+const handler = preventUnload();
 cancel(handler);
 ```
 
