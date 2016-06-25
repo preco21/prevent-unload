@@ -5,7 +5,7 @@
 [![Build Status](https://img.shields.io/travis/preco21/prevent-unload/master.svg?style=flat-square)](https://travis-ci.org/preco21/prevent-unload)
 [![Development Dependency Status](https://img.shields.io/david/dev/preco21/prevent-unload.svg?style=flat-square)](https://david-dm.org/preco21/prevent-unload#info=devDependencies)
 
-> Prevent page unloading from the user's action on browser
+> Prevent page unloading from the user's action
 
 ## Installation
 
