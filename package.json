@@ -1,7 +1,7 @@
 {
   "name": "prevent-unload",
   "version": "1.1.0",
-  "description": "Prevent page unloading in simple way",
+  "description": "Prevent page unloading from the user's action",
   "author": "Plusb Preco <plusb21@gmail.com>",
   "main": "lib/index.js",
   "scripts": {
