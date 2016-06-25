@@ -17,12 +17,12 @@ function makeHandler(message = '') {
   return (event) => {
     // cross-browser solution
     // https://developer.mozilla.org/en-US/docs/Web/Events/beforeunload
-    event.returnValue = message;
+    event.returnValue = message; // eslint-disable-line no-param-reassign
     return message;
   };
 }
 
 export {
   preventUnload as default,
-  cancel
+  cancel,
 };
