@@ -29,14 +29,14 @@
     "browser"
   ],
   "devDependencies": {
-    "ava": "^0.15.2",
+    "ava": "^0.16.0",
     "babel-cli": "^6.11.4",
     "babel-eslint": "^6.1.2",
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-es2015": "^6.13.2",
     "babel-register": "^6.11.6",
     "eslint": "^3.2.2",
-    "eslint-config-prev": "0.5.0",
+    "eslint-config-prev": "0.6.0",
     "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-import": "^1.12.0",
     "jsdom": "^9.4.1",
