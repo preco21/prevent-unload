@@ -5,12 +5,12 @@
   "author": "Plusb Preco <plusb21@gmail.com>",
   "main": "lib/index.js",
   "scripts": {
-    "test": "npm run lint && ava",
     "prepublish": "npm run build",
-    "build": "npm run clean && npm run babel",
+    "test": "npm run lint && ava",
     "lint": "eslint src",
+    "build": "npm run clean && npm run babel",
     "babel": "babel src -d lib",
-    "clean": "rimraf lib && mkdir lib"
+    "clean": "rimraf lib"
   },
   "license": "MIT",
   "homepage": "https://github.com/preco21/prevent-unload#readme",
