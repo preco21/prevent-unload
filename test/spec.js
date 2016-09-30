@@ -1,6 +1,6 @@
 import test from 'ava';
 import {spy} from 'sinon';
-import preventUnload, {cancel} from '../';
+import preventUnload, {cancel} from '../src';
 
 test('`preventUnload` is a function', (t) => {
   t.is(typeof preventUnload, 'function');
