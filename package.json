@@ -7,9 +7,9 @@
   "scripts": {
     "prepublish": "npm run build",
     "test": "npm run lint && ava",
-    "lint": "eslint src",
+    "lint": "eslint .",
     "build": "npm run clean && npm run babel",
-    "babel": "babel src -d lib",
+    "babel": "babel --out-dir lib src",
     "clean": "rimraf lib"
   },
   "license": "MIT",
