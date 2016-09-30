@@ -19,7 +19,7 @@
     "url": "https://github.com/preco21/prevent-unload/issues"
   },
   "files": [
-    "lib/"
+    "lib"
   ],
   "keywords": [
     "beforeunload",
