@@ -7,7 +7,7 @@
 
 > Prevent page unloading from the user's action
 
-## Installation
+## Install
 
 ```bash
 $ npm install --save prevent-unload
