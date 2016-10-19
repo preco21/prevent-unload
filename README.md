@@ -28,15 +28,11 @@ cancel(handler);
 
 ### `preventUnload([message])`
 
-* `message` String (optional) - Message to display on confirm popup. Default is
-platform specified.
+* `message` String (optional) - Message to display on confirm popup. Default is platform specified.
 
-Apply page unloading prevention. If user attempt to close current web page after
-calling the method, then browser blocks page unloading and shows up popup with
-specified message.
+Apply page unloading prevention. If user attempt to close current web page after calling the method, then browser blocks page unloading and shows up popup with specified message.
 
-This method returns reference of `handler`, which can be used for cancel the
-behavior.
+This method returns reference of `handler`, which can be used for cancel the behavior.
 
 ### `preventUnload.cancel(handler)`
 
