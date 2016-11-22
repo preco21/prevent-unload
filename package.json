@@ -6,10 +6,10 @@
   "main": "lib/index.js",
   "scripts": {
     "prepublish": "npm run build",
+    "prebuild": "npm run clean",
     "test": "npm run lint && ava",
     "lint": "eslint .",
-    "build": "npm run clean && npm run babel",
-    "babel": "babel --out-dir lib src",
+    "build": "babel --out-dir lib src",
     "clean": "rimraf lib"
   },
   "license": "MIT",
