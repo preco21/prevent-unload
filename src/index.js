@@ -16,7 +16,7 @@ function cancel(handler) {
 
 function makeHandler(message = '') {
   return (event) => {
-    // cross-browser solution
+    // Cross-browser solution
     // https://developer.mozilla.org/en-US/docs/Web/Events/beforeunload
     event.returnValue = message; // eslint-disable-line no-param-reassign
 
