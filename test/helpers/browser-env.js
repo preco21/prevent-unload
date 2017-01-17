@@ -1,7 +1,10 @@
 import {jsdom} from 'jsdom';
 
+const {defaultView} = document;
+const {navigator} = window;
+
 global.document = jsdom('<body></body>');
-global.window = document.defaultView;
-global.navigator = window.navigator;
+global.window = defaultView;
+global.navigator = navigator;
 
 export {};
