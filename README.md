@@ -15,8 +15,6 @@ $ npm install --save prevent-unload
 
 ## Usage
 
-Example:
-
 ```javascript
 import preventUnload, {cancel} from 'prevent-unload';
 
@@ -26,7 +24,7 @@ cancel(handler);
 
 ## API
 
-### `preventUnload([message])`
+### preventUnload([message])
 
 * `message` String (optional) - Message to display on confirm popup. Default is platform specified.
 
@@ -34,7 +32,7 @@ Apply page unloading prevention. If user attempt to close current web page after
 
 This method returns reference of `handler`, which can be used for cancel the behavior.
 
-### `preventUnload.cancel(handler)`
+### preventUnload.cancel(handler)
 
 * `handler` Function - Handler reference to cancel event.
 
