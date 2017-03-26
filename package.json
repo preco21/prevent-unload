@@ -7,8 +7,7 @@
   "scripts": {
     "prepublish": "npm run build",
     "prebuild": "npm run clean",
-    "test": "npm run lint && ava",
-    "lint": "eslint .",
+    "test": "eslint . && ava",
     "build": "babel --out-dir lib src",
     "clean": "rimraf lib"
   },
