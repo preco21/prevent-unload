@@ -7,7 +7,7 @@ function preventUnload(message) {
 
 function cancel(handler) {
   if (typeof handler !== 'function') {
-    throw new Error('handler must be a function');
+    throw new Error('`handler` must be a function');
   }
 
   window.removeEventListener('beforeunload', handler);
