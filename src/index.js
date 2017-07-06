@@ -1,11 +1,11 @@
-function preventUnload(message) {
+export default function preventUnload(message) {
   const handler = createHandler(message);
   window.addEventListener('beforeunload', handler);
 
   return handler;
 }
 
-function cancel(handler) {
+export function cancel(handler) {
   if (typeof handler !== 'function') {
     throw new Error('`handler` must be a function');
   }
@@ -23,8 +23,3 @@ function createHandler(message = '') {
     return message;
   };
 }
-
-export {
-  preventUnload as default,
-  cancel,
-};
