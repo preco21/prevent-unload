@@ -7,7 +7,7 @@ export default function preventUnload(message) {
 
 export function cancel(handler) {
   if (typeof handler !== 'function') {
-    throw new Error('`handler` must be a function');
+    throw new TypeError('`handler` must be a function');
   }
 
   window.removeEventListener('beforeunload', handler);
