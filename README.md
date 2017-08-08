@@ -10,7 +10,7 @@
 ## Install
 
 ```bash
-$ npm install --save prevent-unload
+$ npm install prevent-unload
 ```
 
 ## Usage
