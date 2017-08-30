@@ -1,4 +1,3 @@
-root: true
 extends: prev
 env:
   browser: true
