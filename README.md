@@ -1,9 +1,9 @@
 # prevent-unload
 
-[![Code Style Prev](https://img.shields.io/badge/code%20style-prev-32c8fc.svg?style=flat-square)](https://github.com/preco21/eslint-config-prev)
-[![NPM Version](https://img.shields.io/npm/v/prevent-unload.svg?style=flat-square)](https://www.npmjs.com/package/prevent-unload)
-[![Build Status](https://img.shields.io/travis/preco21/prevent-unload/master.svg?style=flat-square)](https://travis-ci.org/preco21/prevent-unload)
-[![Dependency Status](https://dependencyci.com/github/preco21/prevent-unload/badge?style=flat-square)](https://dependencyci.com/github/preco21/prevent-unload)
+[![Code Style Prev](https://img.shields.io/badge/code%20style-prev-32c8fc.svg)](https://github.com/preco21/eslint-config-prev)
+[![NPM Version](https://img.shields.io/npm/v/prevent-unload.svg)](https://www.npmjs.com/package/prevent-unload)
+[![Build Status](https://travis-ci.org/preco21/prevent-unload.svg?branch=master)](https://travis-ci.org/preco21/prevent-unload)
+[![Dependency Status](https://dependencyci.com/github/preco21/prevent-unload/badge)](https://dependencyci.com/github/preco21/prevent-unload)
 
 > Prevent page unloading from the user's action
 
