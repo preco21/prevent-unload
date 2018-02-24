@@ -37,7 +37,7 @@
     "eslint-config-prev": "^6.0.0",
     "jsdom": "^9.12.0",
     "rimraf": "^2.6.1",
-    "sinon": "^2.1.0"
+    "sinon": "^4.4.1"
   },
   "ava": {
     "require": [
