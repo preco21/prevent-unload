@@ -35,7 +35,7 @@
     "babel-register": "^6.24.1",
     "eslint": "^4.5.0",
     "eslint-config-prev": "^6.0.0",
-    "jsdom": "^9.12.0",
+    "jsdom": "^11.7.0",
     "rimraf": "^2.6.1",
     "sinon": "^2.1.0"
   },
